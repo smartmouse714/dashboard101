@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Holidays Viewer</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Public Holidays</h1>
+
+        <div class="toolbar">
+
+            <select id="country">
+                <option value="NZ">New Zealand</option>
+                <option value="AU">Australia</option>
+                <option value="CA">Canada</option>
+                <option value="GB">United Kingdom</option>
+            </select>
+
+            <select id="region"></select>
+
+            <input type="number" id="year" min="2024" max="2040">
+
+            <button id="loadBtn">
+                Load Holidays
+            </button>
+
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+</body>
+
+</html>
