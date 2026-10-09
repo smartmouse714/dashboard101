@@ -31,6 +31,60 @@ const regions = {
         { value: "GB-WLS", text: "Wales" },
         { value: "GB-NIR", text: "Northern Ireland" }
     ],
+		
+	US: [
+		{ value: "US-AL", text: "Alabama" },
+		{ value: "US-AK", text: "Alaska" },
+		{ value: "US-AZ", text: "Arizona" },
+		{ value: "US-AR", text: "Arkansas" },
+		{ value: "US-CA", text: "California" },
+		{ value: "US-CO", text: "Colorado" },
+		{ value: "US-CT", text: "Connecticut" },
+		{ value: "US-DE", text: "Delaware" },
+		{ value: "US-FL", text: "Florida" },
+		{ value: "US-GA", text: "Georgia" },
+		{ value: "US-HI", text: "Hawaii" },
+		{ value: "US-ID", text: "Idaho" },
+		{ value: "US-IL", text: "Illinois" },
+		{ value: "US-IN", text: "Indiana" },
+		{ value: "US-IA", text: "Iowa" },
+		{ value: "US-KS", text: "Kansas" },
+		{ value: "US-KY", text: "Kentucky" },
+		{ value: "US-LA", text: "Louisiana" },
+		{ value: "US-ME", text: "Maine" },
+		{ value: "US-MD", text: "Maryland" },
+		{ value: "US-MA", text: "Massachusetts" },
+		{ value: "US-MI", text: "Michigan" },
+		{ value: "US-MN", text: "Minnesota" },
+		{ value: "US-MS", text: "Mississippi" },
+		{ value: "US-MO", text: "Missouri" },
+		{ value: "US-MT", text: "Montana" },
+		{ value: "US-NE", text: "Nebraska" },
+		{ value: "US-NV", text: "Nevada" },
+		{ value: "US-NH", text: "New Hampshire" },
+		{ value: "US-NJ", text: "New Jersey" },
+		{ value: "US-NM", text: "New Mexico" },
+		{ value: "US-NY", text: "New York" },
+		{ value: "US-NC", text: "North Carolina" },
+		{ value: "US-ND", text: "North Dakota" },
+		{ value: "US-OH", text: "Ohio" },
+		{ value: "US-OK", text: "Oklahoma" },
+		{ value: "US-OR", text: "Oregon" },
+		{ value: "US-PA", text: "Pennsylvania" },
+		{ value: "US-RI", text: "Rhode Island" },
+		{ value: "US-SC", text: "South Carolina" },
+		{ value: "US-SD", text: "South Dakota" },
+		{ value: "US-TN", text: "Tennessee" },
+		{ value: "US-TX", text: "Texas" },
+		{ value: "US-UT", text: "Utah" },
+		{ value: "US-VT", text: "Vermont" },
+		{ value: "US-VA", text: "Virginia" },
+		{ value: "US-WA", text: "Washington" },
+		{ value: "US-WV", text: "West Virginia" },
+		{ value: "US-WI", text: "Wisconsin" },
+		{ value: "US-WY", text: "Wyoming" },
+		{ value: "US-DC", text: "District of Columbia" }
+	],
 
     AU: [
         { value: "AU-ACT", text: "Australian Capital Territory" },
@@ -135,7 +189,7 @@ async function loadHolidays() {
 
     } catch (error) {
         result.innerHTML =
-            `< div class="error" > ${error.message}</div > `;
+            `<div class="error"> ${error.message}</div> `;
     }
 }
 
